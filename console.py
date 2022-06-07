@@ -22,24 +22,28 @@ album_1 = Album("24K Magic", "R&B", artist_1)
 music_repository.save(album_1)
 
 album_2 = Album("Unorthodox Jukebox", "Pop", artist_1)
-music_repository.save(album_1)
+music_repository.save(album_2)
 
 album_3 = Album("Loveless", "Shoegaze", artist_2)
-music_repository.save(album_1)
+music_repository.save(album_3)
 
 music_repository.select_all()
-# music_repository.select(4)
-# artist_repository.select(7)
+music_repository.select(4)
+artist_repository.select(7)
 
-# all_artists = artist_repository.select_all()
-# print(all_artists)
+all_artists = artist_repository.select_all()
+for artist in all_artists:
+    print(artist.__dict__)
 
-# all_albums = music_repository.select_all()
-# print(all_albums)
+all_albums = music_repository.select_all()
+for album in all_albums:
+    print(album.__dict__)
 
-album_2 = Album("Doo-Wops & Hooligans", "Pop", artist_1)
-music_repository.update(album_2)
+# album_2 = Album("Doo-Wops & Hooligans", "Pop", artist_1)
+# music_repository.update(album_2)
 
-artist_3 = Artist("U2")
-artist_repository.update(artist_3)
+# artist_3 = Artist("U2")
+# artist_repository.update(artist_3)
+
+
 pdb.set_trace()
