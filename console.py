@@ -31,4 +31,10 @@ music_repository.select_all()
 music_repository.select(4)
 artist_repository.select(7)
 
+all_artists = artist_repository.select_all()
+print(all_artists)
+
+all_albums = music_repository.select_all()
+print(all_albums)
+
 pdb.set_trace()
