@@ -41,4 +41,5 @@ album_2 = Album("Doo-Wops & Hooligans", "Pop", artist_1)
 music_repository.update(album_2)
 
 artist_3 = Artist("U2")
+artist_repository.update(artist_3)
 pdb.set_trace()
