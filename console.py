@@ -28,13 +28,17 @@ album_3 = Album("Loveless", "Shoegaze", artist_2)
 music_repository.save(album_1)
 
 music_repository.select_all()
-music_repository.select(4)
-artist_repository.select(7)
+# music_repository.select(4)
+# artist_repository.select(7)
 
-all_artists = artist_repository.select_all()
-print(all_artists)
+# all_artists = artist_repository.select_all()
+# print(all_artists)
 
-all_albums = music_repository.select_all()
-print(all_albums)
+# all_albums = music_repository.select_all()
+# print(all_albums)
 
+album_2 = Album("Doo-Wops & Hooligans", "Pop", artist_1)
+music_repository.update(album_2)
+
+artist_3 = Artist("U2")
 pdb.set_trace()

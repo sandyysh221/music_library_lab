@@ -33,6 +33,12 @@ def save(artist):
     return artist
 
 
+def update(user):
+    sql = "UPDATE artists SET (name) = (%s) WHERE id = %s"
+    values = [artist.name, artist.id]
+    run_sql(sql, values)
+
+
 def delete_all():
     sql = "DELETE  FROM artists"
     run_sql(sql)
